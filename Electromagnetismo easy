@@ -1,0 +1,73 @@
+import streamlit as st
+
+# Título de la app
+st.title("Información sobre Electromagnetismo")
+
+# Breve descripción
+st.write("""
+El **electromagnetismo** es una de las cuatro fuerzas fundamentales de la naturaleza. Estudia la interacción entre partículas cargadas, como electrones y protones. Es la base de muchos fenómenos como la electricidad, el magnetismo y la luz.
+""")
+
+# Crear una sección con el botón para obtener información adicional
+if st.button("Ver Información sobre Electromagnetismo"):
+    st.write("### Definición")
+    st.write("""
+    El **electromagnetismo** describe la interacción entre partículas con carga eléctrica. Está relacionado con los **campos eléctricos** y **magnéticos** y se puede describir mediante las **ecuaciones de Maxwell**.
+    Esta interacción es responsable de fenómenos como la **electricidad** y el **magnetismo**, y está en la base de muchas tecnologías, desde motores eléctricos hasta comunicaciones inalámbricas.
+    """)
+    
+    st.write("### Fórmulas clave")
+    st.write("""
+    Aquí algunas fórmulas importantes en electromagnetismo:
+
+    1. **Ley de Coulomb** (fuerza eléctrica):
+    \[
+    F = k_e \cdot \frac{q_1 \cdot q_2}{r^2}
+    \]
+    donde \( F \) es la fuerza entre dos cargas \( q_1 \) y \( q_2 \), \( r \) es la distancia entre ellas, y \( k_e \) es la constante de Coulomb.
+
+    2. **Ley de Ampère** (campo magnético debido a una corriente eléctrica):
+    \[
+    B = \frac{\mu_0 \cdot I}{2 \pi r}
+    \]
+    donde \( B \) es la intensidad del campo magnético, \( I \) es la corriente eléctrica, \( r \) es la distancia desde el conductor, y \( \mu_0 \) es la permeabilidad magnética en el vacío.
+
+    3. **Ley de Faraday** (inducción electromagnética):
+    \[
+    \mathcal{E} = - \frac{d\Phi_B}{dt}
+    \]
+    donde \( \mathcal{E} \) es la fuerza electromotriz (fem), y \( \Phi_B \) es el flujo magnético.
+
+    4. **Ley de Gauss para el magnetismo**:
+    \[
+    \nabla \cdot \vec{B} = 0
+    \]
+    que indica que no existen monopolos magnéticos.
+    """)
+
+    st.write("### Función del Electromagnetismo")
+    st.write("""
+    La función principal del electromagnetismo es describir la interacción entre partículas cargadas. Estas interacciones son responsables de fenómenos como la electricidad, el magnetismo y la luz. Es fundamental para comprender el comportamiento de dispositivos eléctricos, la generación de energía y la transmisión de señales.
+
+    El electromagnetismo tiene aplicaciones en:
+    - **Generación de energía** (por ejemplo, en generadores eléctricos).
+    - **Motores eléctricos**.
+    - **Tecnología de comunicaciones** (radio, televisión, teléfonos móviles, Wi-Fi).
+    - **Óptica** (estudio de la luz).
+    """)
+
+    st.write("### Ejemplos prácticos de Electromagnetismo")
+    st.write("""
+    1. **Generadores eléctricos**: Los generadores convierten la energía mecánica en energía eléctrica mediante la **inducción electromagnética**.
+    
+    2. **Transformadores**: Los transformadores utilizan campos magnéticos para cambiar el voltaje en circuitos eléctricos.
+
+    3. **Motores eléctricos**: Utilizan campos magnéticos para convertir la energía eléctrica en energía mecánica.
+
+    4. **Ondas electromagnéticas**: La luz es un ejemplo de onda electromagnética que se propaga en el vacío.
+    """)
+
+# Instrucciones de uso
+st.write("""
+Presiona el botón para explorar más sobre el **electromagnetismo**.
+""")
